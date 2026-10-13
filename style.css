@@ -1,0 +1,232 @@
+/* Stiluri Generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #1a252f;
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e67e22; /* Portocaliu industrial */
+}
+
+/* Butoane */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-phone {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-phone:hover {
+    background-color: #d35400;
+}
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: #fff;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebd56;
+}
+
+.btn-call {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-call:hover {
+    background-color: #2980b9;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    color: #ddd;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Secțiunea Servicii */
+.services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2, .steps h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1a252f;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Secțiunea Pași */
+.steps {
+    background-color: #eaeded;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.step-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: #e67e22;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a252f;
+    color: #ccc;
+    padding-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.footer-info h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 8px;
+}
+
+.footer-contact i {
+    color: #e67e22;
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    background-color: #111a22;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* Adaptare Mobil */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .hero-buttons {
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+}
